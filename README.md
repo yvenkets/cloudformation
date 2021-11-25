@@ -32,4 +32,13 @@ aws cloudformation validate-template --template-body file://c:/shivam.yml
 run the template
 
 aws cloudformation create-stack --stack-name shivamnew --template-body file://c:/shivam.yml
+
+
+to list aws cloud formation stacks
+
+aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE
+
+to delete cloudformation stacks
+
+aws cloudformation delete-stack --stack-name myteststack
       
