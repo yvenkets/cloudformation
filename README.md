@@ -17,7 +17,9 @@ Resources:
 ```    
 
 create cloudformation stack then upload the yml file in that page.
+for more info
 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-imageid
 
 
       
