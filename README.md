@@ -21,5 +21,15 @@ for more info
 
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-imageid
 
+Run this in AWS CLi
+Install aws cli
+configure with your iam user credentials
+place your yaml file in your pc local location.
+validate the template
 
+aws cloudformation validate-template --template-body file://c:/shivam.yml
+
+run the template
+
+aws cloudformation create-stack --stack-name shivamnew --template-body file://c:/shivam.yml
       
