@@ -1,0 +1,19 @@
+Resources:
+  Ec2Instance1:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      SecurityGroupIds:
+        - sg-05562793e4c3b2f37
+      KeyName: deep
+      ImageId: ami-06a627b7e24024728
+      InstanceType: t2.small
+      SubnetId: subnet-e8b7e4a4
+  Ec2Instance2:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      SecurityGroupIds:
+        - sg-05562793e4c3b2f37
+      KeyName: deep
+      ImageId: ami-06a627b7e24024728
+      InstanceType: t2.small
+      SubnetId: subnet-e8b7e4a4
