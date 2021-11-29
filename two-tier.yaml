@@ -8,12 +8,20 @@ Resources:
       ImageId: ami-06a627b7e24024728
       InstanceType: t2.small
       SubnetId: subnet-e8b7e4a4
+      PrivateIpAddress: "172.31.1.14"
+      Tags:
+        - Key: Name
+          Value: Web
   Ec2Instance2:
     Type: 'AWS::EC2::Instance'
     Properties:
       SecurityGroupIds:
         - sg-05562793e4c3b2f37
-      KeyName: deep
-      ImageId: ami-06a627b7e24024728
+      KeyName: Mysql server
+      ImageId: ami-0dea59949707eb83d
       InstanceType: t2.small
       SubnetId: subnet-e8b7e4a4
+      PrivateIpAddress: "172.31.1.13"
+      Tags:
+        - Key: Name
+          Value: DB
